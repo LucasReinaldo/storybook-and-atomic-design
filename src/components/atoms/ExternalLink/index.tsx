@@ -3,13 +3,17 @@ import { IconBaseProps } from 'react-icons';
 
 import { Anchor } from './styles';
 
-export interface IAnchorProps {
+export interface IExternalLinkProps {
   children: string;
   icon?: React.ElementType<IconBaseProps>;
   href?: string;
 }
 
-export const AnchorTag = ({ children, icon: Icon, href }: IAnchorProps) => {
+export const ExternalLink = ({
+  children,
+  icon: Icon,
+  href,
+}: IExternalLinkProps) => {
   return (
     <Anchor href={href} target="_blank">
       {children}
