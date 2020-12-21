@@ -1,15 +1,16 @@
 import React from 'react';
 
 import { ThemeProvider } from 'styled-components';
-import defaultTheme from './styles/theme/defaultTheme';
-import GlobalStyles from './styles/GlobalStyles';
-import Home from './pages/Home';
+import GlobalStyles from './components/particles/GlobalStyles';
+import defaultTheme from './components/particles/theme/defaultTheme';
+
+import Routes from './routes';
 
 const App = () => {
   return (
     <>
       <ThemeProvider theme={defaultTheme}>
-        <Home />
+        <Routes />
         <GlobalStyles />
       </ThemeProvider>
     </>
