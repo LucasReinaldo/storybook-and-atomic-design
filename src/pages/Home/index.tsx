@@ -1,13 +1,27 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { GiSpiderMask } from 'react-icons/gi';
+import { Navbar } from '../../components/molecules/Navbar';
 
 import { Container, Section, Description, Warning, Link } from './styles';
+
+const links = [
+  {
+    title: 'home',
+  },
+  {
+    title: 'contact',
+  },
+  {
+    title: 'about',
+  },
+];
 
 const Home = () => {
   return (
     <Container>
       <Section>
+        <Navbar links={links} direction="horizontal" />
         <Description>
           "With great power there must also come great responsibility"
         </Description>
